@@ -28,6 +28,11 @@ document.getElementById('btn-donation-noakhali').addEventListener('click', funct
         return;
     }
 
+    if(donationAmountNoakhali===0){
+        alert('0 amount not acceptable');
+        return;
+    };
+
     if (donationAmountNoakhali > donationBlanceMain) {
         alert('Donation amount exceed balance amount');
         return;
@@ -64,6 +69,11 @@ document.getElementById('btn-donation-feni').addEventListener('click', function 
         return;
     }
 
+    if(donationAmountFeni===0){
+        alert('0 amount not acceptable');
+        return;
+    };
+
     if (donationAmountFeni > donationBlanceMain) {
         alert('Donation amount exceed balance amount');
         return;
@@ -97,6 +107,11 @@ document.getElementById('btn-donation-injured').addEventListener('click', functi
 
     if (donationAmountcheck === false) {
         alert('Check your Donation amount!!!!!!');
+        return;
+    };
+
+    if(donationAmountInjured===0){
+        alert('0 amount not acceptable');
         return;
     };
 
